@@ -32,3 +32,9 @@ console.log(karla.getInfo());
 
 console.log(jill.checkAge());
 console.log(karla.checkAge());
+
+karla.checkAge = function() {
+  return `Ten years ago ${this.fname} was NOT old enough to have wine at a bar.`;
+};
+
+console.log(karla.checkAge());
